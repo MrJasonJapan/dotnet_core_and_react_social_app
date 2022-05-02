@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "CUKbN80zt6lw9/xnXwAIVzEVOP7/Dpg2vQllFdO92cOCc5ZK9vrjFPqulKlFFE38+LB+Yj/SsUp1LexkzG1tjQ==",
+  "dgSpecHash": "psSwGMJqI1l2KqdujUgab2cZHeOJsmJjsIi2LGL+vSuJr4QVUP4QS3A1G/T9HQVwMnp9uiQ47rVDi+twhSEFTA==",
   "success": true,
   "projectFilePath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jgett\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.4\\microsoft.data.sqlite.core.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
+    "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.4\\microsoft.entityframeworkcore.design.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.4\\microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.4\\microsoft.entityframeworkcore.sqlite.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.4\\microsoft.entityframeworkcore.sqlite.core.6.0.4.nupkg.sha512",
