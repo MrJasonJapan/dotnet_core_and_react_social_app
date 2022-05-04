@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lnk0KPGAl4809wKBFtqW+mBHzNZ1TWwaBvgnekmmkcxxjMMP2ALLhIzJypcplCkWBROqe1qgjzMUW/GoFAxMEQ==",
+  "dgSpecHash": "BWlB6O/9zEJwidEqjgNQ5hl3Ut5aK/Zt1+stXFd9yuDV8Cb8gHWiz5pWlq4zOSyl401jpoN80k2nL+ZolYlqoQ==",
   "success": true,
-  "projectFilePath": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jgett\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

@@ -1191,11 +1191,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
+      "projectPath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\jgett\\.nuget\\packages\\",
-      "outputPath": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\obj\\",
+      "outputPath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1208,17 +1208,19 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Domain\\Domain.csproj"
             },
-            "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "c:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Persistence\\Persistence.csproj"
+            "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Persistence\\Persistence.csproj"
             }
           }
         }
