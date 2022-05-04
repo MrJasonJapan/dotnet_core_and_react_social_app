@@ -1,4 +1,5 @@
 using Application.Activities;
+using Application.Core;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -34,8 +35,10 @@ namespace API
                     policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
                 });
             });
-            // Tell MediatR where to find our handlers.
+            // Make sure MediatR knows where to find our handlers.
             services.AddMediatR(typeof(List.Handler).Assembly);
+            // Make sure AutoMapper knows where to find our Mapping Profiles
+            services.AddAutoMapper(typeof(MappingProfiles).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

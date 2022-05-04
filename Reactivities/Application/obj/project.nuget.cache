@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "BWlB6O/9zEJwidEqjgNQ5hl3Ut5aK/Zt1+stXFd9yuDV8Cb8gHWiz5pWlq4zOSyl401jpoN80k2nL+ZolYlqoQ==",
+  "dgSpecHash": "0xf9T+ThDHLaASS/efCdVY6XbnlHCw/6qGyUIIi4Rp5YjVudgTmAB+JGFuxjm8+2Yacs/6/FzLtieqdqy1MiRw==",
   "success": true,
   "projectFilePath": "C:\\data\\codespace\\kd7\\react_research\\dotnet_core_and_react_social_app\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jgett\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\jgett\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\jgett\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.4\\microsoft.data.sqlite.core.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\jgett\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
