@@ -5,9 +5,10 @@ import { Activity } from '../../../app/models/activity';
 interface Props {
   selectedActivity: Activity | undefined;
   closeForm: () => void;
+  createOrEdit: (activity: Activity) => void;
 }
 
-export default function ActivityForm({ selectedActivity, closeForm }: Props) {
+export default function ActivityForm({ selectedActivity, closeForm, createOrEdit }: Props) {
   const initialState = selectedActivity ?? {
     id: '',
     title: '',
@@ -22,7 +23,7 @@ export default function ActivityForm({ selectedActivity, closeForm }: Props) {
   const [activity, setActivity] = useState(initialState);
 
   function handleSubmit() {
-    console.log(activity);
+    createOrEdit(activity);
   }
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
