@@ -13,7 +13,13 @@ function App() {
 
   useEffect(() => {
     agent.Activities.list().then((response) => {
-      setActivities(response);
+      // temporarily modify the date inside each activity, so our UI is happy for now.
+      let activities: Activity[] = [];
+      response.forEach((activity) => {
+        activity.date = activity.date.split('T')[0];
+        activities.push(activity);
+      });
+      setActivities(activities);
     });
   }, []);
 
