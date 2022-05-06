@@ -5,6 +5,23 @@
 
 appsettings.json
 
+./API/obj/API.csproj.nuget.dgspec.json
+./API/obj/API.csproj.nuget.g.props
+./API/obj/project.assets.json
+./API/obj/project.nuget.cache
+./Application/obj/Application.csproj.nuget.dgspec.json
+./Application/obj/Application.csproj.nuget.g.props
+./Application/obj/project.assets.json
+./Application/obj/project.nuget.cache
+./Domain/obj/Domain.csproj.nuget.dgspec.json
+./Domain/obj/Domain.csproj.nuget.g.props
+./Domain/obj/project.assets.json
+./Domain/obj/project.nuget.cache
+./Persistence/obj/Persistence.csproj.nuget.dgspec.json
+./Persistence/obj/Persistence.csproj.nuget.g.props
+./Persistence/obj/project.assets.json
+./Persistence/obj/project.nuget.cache
+
 # User-specific files
 *.rsuser
 *.suo
