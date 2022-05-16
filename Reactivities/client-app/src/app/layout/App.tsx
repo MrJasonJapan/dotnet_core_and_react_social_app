@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, useLocation } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import NavBar from './NavBar';
