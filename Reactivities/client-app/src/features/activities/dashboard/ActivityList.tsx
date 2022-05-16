@@ -6,7 +6,7 @@ import { useStore } from '../../../app/models/store';
 
 export default observer(function ActivityList() {
   const { activityStore } = useStore();
-  const { activitiesByDate, selectActivity, deleteActivity, loading } = activityStore;
+  const { activitiesByDate, deleteActivity, loading } = activityStore;
 
   const [target, setTarget] = useState('');
 
