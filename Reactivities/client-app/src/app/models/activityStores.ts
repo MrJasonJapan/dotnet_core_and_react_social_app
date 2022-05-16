@@ -13,9 +13,24 @@ export default class ActivityStore {
     makeAutoObservable(this);
   }
 
-  // Computed Property
+  // Computed Function
   get activitiesByDate() {
     return Array.from(this.activityRegistry.values()).sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  }
+
+  //Computed Function
+  get groupedActivities() {
+    // The reduce function will take an array of objects (which we get from Object.entries) and reduce it to a single value - in this case the date string.
+    // From there we use the date string as a 'key' and then the values for this 'key' will be an array of activities that take place on that date.
+    return Object.entries(
+      this.activitiesByDate.reduce((activities, activity) => {
+        const date = activity.date; // key
+        // check for a 'match'. If it 'matches', add the activity to the matching group/array. If not, create a new array with that activity.
+        activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+        // * note: activities[date] -> This means: Get the property?activity? (分かりにくい) inside activites that matches the particular date string.
+        return activities;
+      }, {} as { [key: string]: Activity[] })
+    );
   }
 
   loadActivities = async () => {
