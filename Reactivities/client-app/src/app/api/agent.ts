@@ -18,10 +18,19 @@ axios.interceptors.response.use(
     return response;
   },
   (error: AxiosError) => {
-    const { data, status } = error.response!;
+    const { data, status, config } = error.response!;
     switch (status) {
       case 400:
-        // grab specific errors if the 400 response has them
+        // simple error as string -> show in toast.
+        if (typeof data === 'string') {
+          toast.error(data);
+        }
+        // error as object: when we get a guid validation issue from the server 'id' will be in the errors,
+        // and we can just use our not found page instead of using a toast
+        if (config.method === 'get' && data.errors.hasOwnProperty('id')) {
+          history.push('/not-found');
+        }
+        // error as object: grab errors to use in our UI after we "throw" them below (instead of showing error in toast)
         if (data.errors) {
           const modelStateErrors = [];
           for (const key in data.errors) {
@@ -31,8 +40,6 @@ axios.interceptors.response.use(
           }
           // throw our errors back to the component as a list of strings!
           throw modelStateErrors.flat();
-        } else {
-          toast.error(data);
         }
         break;
       case 401:

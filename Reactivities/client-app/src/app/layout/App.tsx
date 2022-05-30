@@ -6,7 +6,7 @@ import { observer } from 'mobx-react-lite';
 import HomePage from '../../features/home/HomePage';
 import ActivityForm from '../../features/activities/form/ActivityForm';
 import ActivityDetails from './../../features/activities/details/ActivityDetails';
-import TestErrors from '../../features/errors/TextError';
+import TestErrors from '../../features/errors/TestError';
 import { ToastContainer } from 'react-toastify';
 import NotFound from '../../features/errors/NotFound';
 import ServerError from '../../features/errors/ServerError';
