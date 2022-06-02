@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { makeAutoObservable, runInAction } from 'mobx';
 import agent from '../api/agent';
 import { Activity } from '../models/activity';
@@ -15,7 +16,7 @@ export default class ActivityStore {
 
   // Computed Function
   get activitiesByDate() {
-    return Array.from(this.activityRegistry.values()).sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+    return Array.from(this.activityRegistry.values()).sort((a, b) => a.date!.getTime() - b.date!.getTime());
   }
 
   //Computed Function
@@ -24,7 +25,7 @@ export default class ActivityStore {
     // From there we use the date string as a 'key' and then the values for this 'key' will be an array of activities that take place on that date.
     return Object.entries(
       this.activitiesByDate.reduce((activities, activity) => {
-        const date = activity.date; // key
+        const date = format(activity.date!, 'dd MMM yyyy'); // key
         // check for a 'match'. If it 'matches', add the activity to the matching group/array. If not, create a new array with that activity.
         activities[date] = activities[date] ? [...activities[date], activity] : [activity];
         // * note: activities[date] -> This means: Get the property?activity? (分かりにくい) inside activites that matches the particular date string.
@@ -70,7 +71,7 @@ export default class ActivityStore {
   };
 
   private setActivity = (activity: Activity) => {
-    activity.date = activity.date.split('T')[0];
+    activity.date = new Date(activity.date!);
     this.activityRegistry.set(activity.id, activity);
   };
 
