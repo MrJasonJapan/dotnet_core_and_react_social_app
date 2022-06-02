@@ -10,6 +10,7 @@ import * as Yup from 'yup';
 import MyTextInput from '../../../app/common/form/MyTextInput';
 import MySelectInput from './../../../app/common/form/MySelectInput';
 import { categoryOptions } from '../../../app/common/options/categoryOptions';
+import MyDateInput from './../../../app/common/form/MyDateInput';
 
 export default observer(function ActivityForm() {
   const history = useHistory();
@@ -67,7 +68,7 @@ export default observer(function ActivityForm() {
             <MyTextInput placeholder='Title' name='title' />
             <MyTextInput placeholder='Description' name='description' />
             <MySelectInput options={categoryOptions} placeholder='Category' name='category' />
-            <MyTextInput placeholder='Date' name='date' />
+            <MyDateInput placeholderText='Date' name='date' showTimeSelect timeCaption='time' dateFormat='MMMM d, yyyy h:mm aa' />
             <MyTextInput placeholder='City' name='city' />
             <MyTextInput placeholder='Venue' name='venue' />
             <Button loading={loading} floated='right' positive type='submit' content='Submit' />
