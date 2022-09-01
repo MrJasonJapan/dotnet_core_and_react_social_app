@@ -1,4 +1,5 @@
 using System.Text;
+using API.Services;
 using Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -19,6 +20,7 @@ namespace API.Extensions
             .AddSignInManager<SignInManager<AppUser>>();
 
             services.AddAuthentication();
+            services.AddScoped<TokenService>(); // "Scoped" to the lifetime of the HTTP request to our API 
 
             return services;
         }
